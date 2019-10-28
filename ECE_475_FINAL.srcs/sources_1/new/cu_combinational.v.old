@@ -1,0 +1,441 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 11/18/2018 03:56:37 AM
+// Design Name: 
+// Module Name: cu_combinational
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+`include "opcodes.vh"
+`include "alu_control_signals.vh"
+
+module cu_combinational(
+    input clk,
+    input rst,
+    input [7:0] ccr_reg,
+    input [31:0] instruction,
+    output [7:0] alu_control,
+    output d_reg_we, dbus_we, abus_we, iobus_we, ira_we, irb_we, pc_we, pc_inc, mar_we, mbr_we,
+    output [3:0] d_reg_w_sel,
+    output [4:0] dbus_mux, abus_mux, iobus_mux, alu_a_mux, alu_b_mux    
+    
+    
+    
+    
+    );
+    
+    //Instruction Definition
+    wire [7:0] opcode = instruction[31:24]; //8 bit opcode
+    wire [3:0] addr_mode = instruction[23:20];  //4 bit addressing mode identifier
+    wire [4:0] dest_reg  = instruction[19:15];  //5 bit destination register identifier
+    wire [4:0] src0_reg = instruction[14:10];    //5 bit register 1 operand
+    wire [4:0] src1_reg = instruction[9:5];    //5 bit register 2 operand
+    wire [4:0] dbg_ctrl = instruction[4:0];     //5 bit Debug configuration/options
+    
+    reg pc_inc = 0;
+    
+     reg dbus_we, abus_we, iobus_we, ira_we, irb_we, pc_we, pc_inc, mar_we, mbr_we, d_reg_we, alu_en = 0;
+       reg [3:0] d_reg_w_sel = 0;
+       reg [4:0] d_reg_mux, dbus_mux, abus_mux, iobus_mux, alu_a_mux, alu_b_mux, sys_ira_select, sys_irb_select, sys_pc_select, alu_control = 0;
+       reg mbr_mux = 0;
+    
+    
+    reg [7:0] timer;
+    
+    
+    
+    always @ (posedge clk)
+    if (rst) begin
+        timer = 0;
+    end else begin
+        dbus_we = 0;
+        abus_we = 0;
+        iobus_we = 0;
+        ira_we = 0;
+        irb_we = 0;
+        pc_we = 0;
+        pc_inc = 0;
+        mar_we = 0;
+        mbr_we = 0;
+        d_reg_we = 0;
+        alu_en = 0;
+        timer = timer + 1;
+        case(timer)
+            1:  begin   //Load
+                    //PC -> MAR
+                    abus_we = 1;
+                    abus_mux= 20;
+                    mar_we = 1;
+                    //MEM -> MBR
+                    mbr_we = 1;
+                    mbr_mux = 1;
+                end
+                
+            2:  begin   //
+                    abus_we = 0;
+                    mar_we = 0;
+                    mbr_we = 0;
+                    pc_inc = 1;
+                    //MBR -> IRA
+                    ira_we = 1;
+                end
+                
+            3:  begin   //Instruction can now be decoded
+                pc_inc = 0;
+                ira_we = 0;
+                //PC -> MAR
+                abus_we=1;
+                abus_mux=20;
+                mar_we=1;
+                //MEM -> MBR
+                mbr_we=1;
+                mbr_mux=1;
+                case(opcode)
+                    `NOP:   begin
+                            timer = 0;
+                            end
+                            
+                    `LDR:   begin
+                            case(addr_mode)
+                                `RR:    begin
+                                            timer = 0;
+                                            //Choose register to put data on dbus
+                                            dbus_we = 1;
+                                            dbus_mux = src1_reg;
+                                            //Choose register to enable write from dbus
+                                            d_reg_w_sel = dest_reg;
+                                            d_reg_we = 1;
+                                            end
+                                        
+                                `IMM:   begin
+                                            //Put IRB on dbus
+                                            dbus_we = 1;
+                                            dbus_mux = 19;
+                                            d_reg_w_sel = dest_reg;
+                                        end
+                                        
+                                `DIR:    begin
+                                            //IRB -> abus, 
+                                            abus_we = 1;
+                                            abus_mux = 19;
+                                            dbus_mux = 16; //MBR
+                                            d_reg_w_sel = dest_reg;
+                                        end
+                                        
+                                endcase
+                                end
+                                
+      
+                    `STR:  begin
+                            case(addr_mode)
+                                `RR:    begin   //dest addr inside dest reg
+                                
+                                        end
+                                        
+                                `IMM:   begin   //dest addr in IRB
+                                
+                                        end
+                                        
+                                `DIR:   begin   //
+                                        
+                                        end
+                                        
+                                endcase
+                                end
+                                
+                    `ZERS: begin
+                            case(addr_mode)
+                                `RR:    begin
+                                            alu_en = 1; //store to z and ccr
+                                            dbus_we = 1;
+                                            dbus_mux = 21;
+                                            alu_control = `SETZER;
+                                            d_reg_we = 1;
+                                            timer = 0;
+                                        end
+                                `DIR:   begin
+                                            alu_en = 1;
+                                            dbus_we = 1;
+                                            dbus_mux = 21;
+                                
+                                                                        
+                             endcase
+                             end   
+                                                            
+                    `ONES:   begin
+                             case(addr_mode)
+                                `RR:    begin
+                                            alu_en = 1;
+                                            dbus_we = 1;
+                                            dbus_mux = 21;
+                                            alu_control = `SETONE;
+                                            end
+                                                                                                                                    
+                              endcase
+                              end 
+                                     
+                    `MVA:   begin
+                    
+                            end
+                            
+                    `MVB:   begin
+                    
+                            end
+                                                           
+                    `AND:   begin
+                            case(addr_mode)
+                                `RR:    begin
+                                        //src0_reg -> aluA
+                                        alu_a_mux = src0_reg;
+                                        //src1_reg -> aluB
+                                        alu_b_mux = src1_reg;
+                                        //alu_operation = and
+                                        alu_control = `AND;
+                                        //write result to Z
+                                        aluZ_we = 1;
+                                        dbus_we = 1;
+                                        dbus_mux = 21;
+                                        d_reg_w_sel = dest_reg;
+                                        end
+                                        
+                            endcase
+                            end   
+                                
+                    `OR:    begin
+                    
+                            end
+                            
+                    `EOR:   begin
+                    
+                            end
+                            
+                    `INV:   begin
+                    
+                            end
+                            
+                    `SHR:   begin
+                    
+                            end
+                            
+                    `SHL:   begin
+                    
+                            end
+                            
+                    `ADD:   begin
+                    
+                            end
+                            
+                    `ADDC:  begin
+                    
+                            end
+                            
+                    `SUB:   begin
+                    
+                            end
+                            
+                    `INCR:  begin
+                    
+                            end
+                            
+                    `DECR:  begin
+                    
+                            end
+                            
+                    `B:     begin
+                    
+                            end
+                            
+                    `BEQ:   begin
+                    
+                            end
+                            
+                            
+            
+                endcase
+                end
+                
+            4:  begin   //Longer instructions
+                //MBR -> IRB       
+                irb_we = 1;
+                case(opcode)
+                `LDR:   begin
+                                            case(addr_mode)
+                                                `RR:    begin
+                                                        timer = 0;
+                                                        
+                                                        end
+                                                        
+                                                `IMM:   begin
+                                                        //Write IRB on dbus to dest reg
+                                                        d_reg_we = 1;
+                                                        timer = 0;
+                                                        end
+                                                        
+                                                `DIR:    begin
+                                                        //IRB -> abus, 
+                                                        //MEM -> MBR
+                                                        
+                                                        end
+                                                        
+                                                endcase
+                                                end
+                                                
+                                                
+                                                
+                                     `STR:  begin
+                                            case(addr_mode)
+                                                `RR:    begin
+                                                
+                                                        end
+                                                        
+                                                `IMM:   begin
+                                                
+                                                        end
+                                                        
+                                                `DIR:   begin
+                                                        
+                                                        end
+                                                        
+                                                endcase
+                                                end
+                                                
+                                     `ZERS:   begin
+                                                                            case(addr_mode)
+                                                                                `RR:    begin
+                                                                                        alu_en = 0; //store to z and ccr
+                                                                                                                                                        dbus_we = 0;
+                                                                                        d_reg_w_sel = dest_reg;
+                                                                                        d_reg_we = 1;
+                                                                                        end
+                                                                                        
+                                                                            endcase
+                                                                            end   
+                                                                            
+                                    `ONES:   begin
+                                                            case(addr_mode)
+                                                                                                                                            `RR:    begin
+                                                                                                                                                    alu_en = 1;
+                                                                                                                                                    dbus_we = 1;
+                                                                                                                                                    dbus_mux = 21;
+                                                                                                                                                    alu_control = `SETONE;
+                                                                                                                                                    end
+                                                                                                                                                    
+                                                                                                                                        endcase
+                                                                                                                                        end 
+                                                
+                                                
+                                    `MVA:   begin
+                                    
+                                            end
+                                            
+                                    `MVB:   begin
+                                    
+                                            end
+                                            
+                                    
+                                    
+                                    
+                                                
+                                                
+                                    `AND:   begin
+                                            case(addr_mode)
+                                                `RR:    begin
+                                                        //dest_reg -> aluA
+                                                        //src_reg -> aluB
+                                                        //alu_operation = and
+                                                        //write result to Z
+                                                        d_reg_we = 1;
+                                                        timer = 0;
+                                                        end
+                                                        
+                                            endcase
+                                            end   
+                                                
+                                    `OR:    begin
+                                    
+                                            end
+                                            
+                                    `EOR:   begin
+                                    
+                                            end
+                                            
+                                    `INV:   begin
+                                    
+                                            end
+                                            
+                                    `SHR:   begin
+                                    
+                                            end
+                                            
+                                    `SHL:   begin
+                                    
+                                            end
+                                            
+                                    `ADD:   begin
+                                    
+                                            end
+                                            
+                                    `ADDC:  begin
+                                    
+                                            end
+                                            
+                                    `SUB:   begin
+                                    
+                                            end
+                                            
+                                    `INCR:  begin
+                                    
+                                            end
+                                            
+                                    `DECR:  begin
+                                    
+                                            end
+                                            
+                                    `B:     begin
+                                    
+                                            end
+                                            
+                                    `BEQ:   begin
+                                    
+                                            end
+                
+                     
+                endcase
+                end
+                                
+            5:  begin
+                irb_we = 0;
+                            
+                end
+                                
+            6:  begin
+                            
+                end
+                
+            7:  begin
+            
+                end
+                
+            8:  begin
+            
+                end
+                
+        endcase
+                
+            
+    end
+    
+    
+endmodule

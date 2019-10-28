@@ -1,0 +1,178 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Dec  4 15:33:12 2018
+# Process ID: 660
+# Current directory: D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14748 D:\Cloud\UMICH Google Drive\Current Classes\ECE 475\Final Project\ECE_475_FINAL\ECE_475_FINAL.xpr
+# Log file: D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/vivado.log
+# Journal file: D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_system_cpu.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
+launch_simulation
+source tb_system_cpu.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_hw
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_alu_32_behav [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_alu_32_behav.tcl
+relaunch_sim
+synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.runs/impl_1/system_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_system_cpu [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+refresh_design
+launch_simulation
+source tb_system_cpu.tcl
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/tb_system_cpu/uut0/control_unit/pc_inc}} 
+relaunch_sim
+add_bp {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 104
+relaunch_sim
+relaunch_sim
+close_sim

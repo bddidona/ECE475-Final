@@ -1,0 +1,81 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Dec  6 11:23:58 2018
+| Host         : UFO-JB2O2NT running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file system_top_control_sets_placed.rpt
+| Design       : system_top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    42 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            1 |
+|     10 |            1 |
+|     14 |            3 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1856 |          465 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              96 |           16 |
+| Yes          | No                    | No                     |             136 |           36 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              86 |           23 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+-------------------------------------------+---------------------------+------------------+----------------+
+|          Clock Signal          |               Enable Signal               |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++--------------------------------+-------------------------------------------+---------------------------+------------------+----------------+
+|  div_clk_BUFG                  | cpu0/control_unit/d_reg_w_sel[3]_i_1_n_1  |                           |                1 |              8 |
+|  div_clk_BUFG                  | cpu0/control_unit/alu_control[4]_i_1_n_1  | cpu0/control_unit/rst_sig |                2 |             10 |
+|  io0/led_array_reg[14]_i_2_n_1 |                                           |                           |                7 |             14 |
+|  div_clk_BUFG                  | cpu0/control_unit/abus_mux[4]_i_1_n_1     | cpu0/control_unit/rst_sig |                4 |             14 |
+|  div_clk_BUFG                  | cpu0/control_unit/dbus_mux[4]_i_1_n_1     | cpu0/control_unit/rst_sig |                2 |             14 |
+|  io0/led_array_reg[15]_i_2_n_1 |                                           |                           |                6 |             18 |
+|  div_clk_BUFG                  | cpu0/control_unit/instruction_ready16_out | cpu0/control_unit/rst_sig |                8 |             20 |
+|  div_clk_BUFG                  | cpu0/control_unit/alu_a_mux[4]_i_1_n_1    | cpu0/control_unit/rst_sig |                7 |             28 |
+|  div_clk_BUFG                  |                                           | cpu0/control_unit/rst_sig |                7 |             30 |
+|  div_clk_BUFG                  | cpu0/control_unit/zc0[0]                  |                           |               15 |             64 |
+|  div_clk_BUFG                  | cpu0/control_unit/E[0]                    |                           |               20 |             64 |
+|  n_0_1749_BUFG                 |                                           |                           |               22 |             66 |
+|  clk_IBUF_BUFG                 |                                           | clear                     |                9 |             66 |
+|  div_clk_BUFG                  |                                           |                           |              430 |           1758 |
++--------------------------------+-------------------------------------------+---------------------------+------------------+----------------+
+
+

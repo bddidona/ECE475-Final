@@ -1,0 +1,12 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sim_1/new/tb_system_cpu.v,1544063345,verilog,,,,tb_system_cpu,,,../../../../ECE_475_FINAL.srcs/sources_1/new,,,,,
+D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_32_behavioral.v,1544049185,verilog,,D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v,D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_control_signals.vh,alu_32_behavioral,,,../../../../ECE_475_FINAL.srcs/sources_1/new,,,,,
+D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_control_signals.vh,1544049203,verilog,,,,,,,,,,,,
+D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v,1544079016,verilog,,D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v,,cpu,,,../../../../ECE_475_FINAL.srcs/sources_1/new,,,,,
+D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v,1544079139,verilog,,D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/sys_ram_8k.v,D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/opcodes.vh;D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_control_signals.vh,cu_combinational,,,../../../../ECE_475_FINAL.srcs/sources_1/new,,,,,
+D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/opcodes.vh,1543703316,verilog,,,,,,,,,,,,
+D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/sys_ram_8k.v,1543372878,verilog,,D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sim_1/new/tb_system_cpu.v,,sys_ram_8k,,,../../../../ECE_475_FINAL.srcs/sources_1/new,,,,,

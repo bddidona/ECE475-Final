@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec  1 22:14:23 2018
+# Process ID: 396
+# Current directory: D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8320 D:\Cloud\UMICH Google Drive\Current Classes\ECE 475\Final Project\ECE_475_FINAL\ECE_475_FINAL.xpr
+# Log file: D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/vivado.log
+# Journal file: D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Cloud/UMICH Google Drive/Current Classes/ECE 475/Final Project/ECE_475_FINAL/ECE_475_FINAL.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source tb_system_cpu.tcl
+relaunch_sim
+add_force {/tb_system_cpu/uut0/R[0]} -radix hex {FF 0ns}
+current_wave_config {Untitled 1}
+add_wave {{/tb_system_cpu/uut0/R}} 
+relaunch_sim
+add_force {/tb_system_cpu/uut0/R[0]} -radix hex {FF 0ns}
+run all
+close_sim
+refresh_design
+launch_simulation
+source tb_system_cpu.tcl
+current_wave_config {Untitled 2}
+add_wave {{/tb_system_cpu/uut0/R}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+close_design

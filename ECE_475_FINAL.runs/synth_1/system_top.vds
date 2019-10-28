@@ -1,0 +1,809 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Dec  6 11:21:53 2018
+# Process ID: 5592
+# Current directory: D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.runs/synth_1
+# Command line: vivado.exe -log system_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top.tcl
+# Log file: D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.runs/synth_1/system_top.vds
+# Journal file: D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_top.tcl -notrace
+Command: synth_design -top system_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8408 
+WARNING: [Synth 8-2611] redeclaration of ansi port z is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_32_behavioral.v:30]
+WARNING: [Synth 8-2611] redeclaration of ansi port cc is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_32_behavioral.v:32]
+WARNING: [Synth 8-2611] redeclaration of ansi port led_array is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/bsp_io.v:42]
+WARNING: [Synth 8-2611] redeclaration of ansi port rst_sig is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/bsp_io.v:43]
+WARNING: [Synth 8-2611] redeclaration of ansi port mem_bus_in is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:40]
+WARNING: [Synth 8-2611] redeclaration of ansi port MAR is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:50]
+WARNING: [Synth 8-2611] redeclaration of ansi port status_indicators is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port dbg_reg_PC is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:56]
+WARNING: [Synth 8-2611] redeclaration of ansi port dbg_reg_IRA is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:56]
+WARNING: [Synth 8-2611] redeclaration of ansi port dbg_reg_MAR is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:56]
+WARNING: [Synth 8-2611] redeclaration of ansi port dbg_reg_MBR is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:56]
+WARNING: [Synth 8-2611] redeclaration of ansi port dbg_reg_IRB is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:56]
+WARNING: [Synth 8-2611] redeclaration of ansi port dbg_reg_ALUZ is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:56]
+WARNING: [Synth 8-2611] redeclaration of ansi port dbg_reg_CCR is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:57]
+WARNING: [Synth 8-2306] macro MVA redefined [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/opcodes.vh:8]
+WARNING: [Synth 8-2306] macro MVB redefined [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/opcodes.vh:9]
+WARNING: [Synth 8-2306] macro MVA redefined [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_control_signals.vh:3]
+WARNING: [Synth 8-2306] macro MVB redefined [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_control_signals.vh:4]
+WARNING: [Synth 8-2611] redeclaration of ansi port pc_inc is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:51]
+WARNING: [Synth 8-2611] redeclaration of ansi port dbus_we is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port abus_we is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port iobus_we is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port ira_we is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port irb_we is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port pc_we is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port pc_inc is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port mar_we is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port mbr_we is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port d_reg_we is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port mem_re is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port mem_we is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port error is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-976] pc_inc has already been declared [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+WARNING: [Synth 8-2654] second declaration of pc_inc ignored [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:53]
+INFO: [Synth 8-994] pc_inc is declared here [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:51]
+WARNING: [Synth 8-2611] redeclaration of ansi port d_reg_w_sel is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:54]
+WARNING: [Synth 8-2611] redeclaration of ansi port dbus_mux is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:55]
+WARNING: [Synth 8-2611] redeclaration of ansi port abus_mux is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:55]
+WARNING: [Synth 8-2611] redeclaration of ansi port iobus_mux is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:55]
+WARNING: [Synth 8-2611] redeclaration of ansi port alu_a_mux is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:55]
+WARNING: [Synth 8-2611] redeclaration of ansi port alu_b_mux is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:55]
+WARNING: [Synth 8-2611] redeclaration of ansi port alu_control is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:56]
+WARNING: [Synth 8-2611] redeclaration of ansi port mbr_mux is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:57]
+WARNING: [Synth 8-2611] redeclaration of ansi port aluZ_we is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:57]
+WARNING: [Synth 8-2611] redeclaration of ansi port aluCCR_we is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:57]
+WARNING: [Synth 8-1082] mbr_mux was previously declared with a range [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:57]
+WARNING: [Synth 8-2611] redeclaration of ansi port timer is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:60]
+WARNING: [Synth 8-2611] redeclaration of ansi port d_out is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/sys_ram_8k.v:33]
+WARNING: [Synth 8-2611] redeclaration of ansi port led_array is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/system_top.v:39]
+WARNING: [Synth 8-2611] redeclaration of ansi port AN is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/system_top.v:41]
+WARNING: [Synth 8-2611] redeclaration of ansi port CA is not allowed [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/system_top.v:41]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 442.566 ; gain = 106.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_top' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/system_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bsp_io' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/bsp_io.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/bsp_io.v:58]
+WARNING: [Synth 8-85] always block has no event control specified [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/bsp_io.v:46]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/bsp_io.v:105]
+WARNING: [Synth 8-3848] Net rgb_led0 in module/entity bsp_io does not have driver. [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/bsp_io.v:32]
+WARNING: [Synth 8-3848] Net rgb_led1 in module/entity bsp_io does not have driver. [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/bsp_io.v:32]
+WARNING: [Synth 8-3848] Net AN in module/entity bsp_io does not have driver. [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/bsp_io.v:33]
+WARNING: [Synth 8-3848] Net CA in module/entity bsp_io does not have driver. [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/bsp_io.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'bsp_io' (1#1) [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/bsp_io.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'dbg_reg_CCR' does not match port width (8) of module 'bsp_io' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/system_top.v:49]
+INFO: [Synth 8-6157] synthesizing module 'sys_ram_8k' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/sys_ram_8k.v:23]
+	Parameter mem_width bound to: 32 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter mem_depth bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'mem_8k.mem' is read successfully [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/sys_ram_8k.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'sys_ram_8k' (2#1) [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/sys_ram_8k.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cu_combinational' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:109]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:186]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:222]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:174]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:273]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:296]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:271]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:343]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:341]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:373]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:393]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:424]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:455]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:486]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:516]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:546]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:578]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:576]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:619]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:617]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:657]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:655]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:701]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:699]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:739]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:737]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:775]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:796]
+WARNING: [Synth 8-6014] Unused sequential element alu_en_reg was removed.  [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'cu_combinational' (3#1) [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:24]
+WARNING: [Synth 8-350] instance 'control_unit' of module 'cu_combinational' requires 29 connections, but only 28 given [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:68]
+INFO: [Synth 8-6157] synthesizing module 'alu_32_behavioral' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_32_behavioral.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_32_behavioral.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'alu_32_behavioral' (4#1) [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_32_behavioral.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'cc' does not match port width (8) of module 'alu_32_behavioral' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:69]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:156]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:184]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:218]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:244]
+INFO: [Synth 8-4471] merging register 'MBR_reg[31:0]' into 'mem_bus_in_reg[31:0]' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:98]
+WARNING: [Synth 8-6014] Unused sequential element MBR_reg was removed.  [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (5#1) [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'dbg_reg_CCR' does not match port width (32) of module 'cpu' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/system_top.v:51]
+WARNING: [Synth 8-3848] Net data_io_in in module/entity system_top does not have driver. [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/system_top.v:38]
+WARNING: [Synth 8-3848] Net device_select in module/entity system_top does not have driver. [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/system_top.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'system_top' (6#1) [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/system_top.v:23]
+WARNING: [Synth 8-3331] design cu_combinational has unconnected port ccr_reg[7]
+WARNING: [Synth 8-3331] design cu_combinational has unconnected port ccr_reg[6]
+WARNING: [Synth 8-3331] design cu_combinational has unconnected port ccr_reg[5]
+WARNING: [Synth 8-3331] design cu_combinational has unconnected port ccr_reg[4]
+WARNING: [Synth 8-3331] design cu_combinational has unconnected port ccr_reg[3]
+WARNING: [Synth 8-3331] design cu_combinational has unconnected port ccr_reg[2]
+WARNING: [Synth 8-3331] design cu_combinational has unconnected port ccr_reg[1]
+WARNING: [Synth 8-3331] design cu_combinational has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design cu_combinational has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design cu_combinational has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design cu_combinational has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design cu_combinational has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[31]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[30]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[29]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[28]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[27]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[26]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[25]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[24]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[23]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[22]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[21]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[20]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[19]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[18]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[17]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[16]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[15]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[14]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[13]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[12]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[11]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[10]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[9]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[8]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[7]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[6]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[5]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[4]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[3]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[2]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[1]
+WARNING: [Synth 8-3331] design cpu has unconnected port iobus[0]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[31]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[30]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[29]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[28]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[27]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[26]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[25]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[24]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[23]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[22]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[21]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[20]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[19]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[18]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[17]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[16]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[15]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[14]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[13]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[12]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[11]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[10]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[9]
+WARNING: [Synth 8-3331] design sys_ram_8k has unconnected port addr[8]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port rgb_led0[2]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port rgb_led0[1]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port rgb_led0[0]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port rgb_led1[2]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port rgb_led1[1]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port rgb_led1[0]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port AN[7]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port AN[6]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port AN[5]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port AN[4]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port AN[3]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port AN[2]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port AN[1]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port AN[0]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port CA[7]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port CA[6]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port CA[5]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port CA[4]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port CA[3]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port CA[2]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port CA[1]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port CA[0]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port data[31]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port data[30]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port data[29]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port data[28]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port data[27]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port data[26]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port data[25]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port data[24]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port data[23]
+WARNING: [Synth 8-3331] design bsp_io has unconnected port data[22]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 488.492 ; gain = 152.332
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 488.492 ; gain = 152.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 488.492 ; gain = 152.332
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/constrs_1/new/nexys4_bsp.xdc]
+WARNING: [Vivado 12-4379] -period contains time 1000000000.000000 which cannot be represented in single precision floating point without rounding by more than 1 picosecond [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/constrs_1/new/nexys4_bsp.xdc:10]
+Finished Parsing XDC File [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/constrs_1/new/nexys4_bsp.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/constrs_1/new/nexys4_bsp.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 855.789 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 855.789 ; gain = 519.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 855.789 ; gain = 519.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 855.789 ; gain = 519.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "led_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'aluCCR_we_reg' into 'aluZ_we_reg' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:93]
+WARNING: [Synth 8-6014] Unused sequential element aluCCR_we_reg was removed.  [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v:93]
+INFO: [Synth 8-5546] ROM "instruction_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "instruction_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instruction_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "instruction_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "instruction_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "instruction_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "instruction_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dbus_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dbus_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dbus_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dbus_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dbus_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dbus_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dbus_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "abus_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "abus_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ira_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "irb_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "irb_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pc_inc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_reg_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mar_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mar_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mar_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mbr_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_reg_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_reg_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "abus_mux" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "zc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dbg_reg_MAR" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'led_array_reg' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/bsp_io.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'zc_reg' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_32_behavioral.v:37]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 855.789 ; gain = 519.629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 6     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 33    
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 71    
+	  10 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 18    
+	   7 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 6     
+	   5 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	  19 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 5     
+	   4 Input      5 Bit        Muxes := 3     
+	  19 Input      5 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
+	  19 Input      3 Bit        Muxes := 6     
+	  19 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 104   
+	   4 Input      1 Bit        Muxes := 26    
+	  10 Input      1 Bit        Muxes := 5     
+	   8 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 8     
+	  20 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 3     
+	  19 Input      1 Bit        Muxes := 12    
+	  23 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module system_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module bsp_io 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+Module sys_ram_8k 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module cu_combinational 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 15    
+	   7 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 6     
+	   5 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	  19 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 5     
+	   4 Input      5 Bit        Muxes := 3     
+	  19 Input      5 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
+	  19 Input      3 Bit        Muxes := 6     
+	  19 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 101   
+	   4 Input      1 Bit        Muxes := 26    
+	  10 Input      1 Bit        Muxes := 5     
+	   8 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 8     
+	  20 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 3     
+	  19 Input      1 Bit        Muxes := 12    
+Module alu_32_behavioral 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 6     
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	  23 Input      1 Bit        Muxes := 1     
+Module cpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 71    
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	  23 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/alu_32_behavioral.v:57]
+DSP Report: Generating DSP zc0, operation Mode is: A*B.
+DSP Report: operator zc0 is absorbed into DSP zc0.
+DSP Report: operator zc0 is absorbed into DSP zc0.
+DSP Report: Generating DSP zc0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator zc0 is absorbed into DSP zc0.
+DSP Report: operator zc0 is absorbed into DSP zc0.
+DSP Report: Generating DSP zc0, operation Mode is: A*B.
+DSP Report: operator zc0 is absorbed into DSP zc0.
+DSP Report: operator zc0 is absorbed into DSP zc0.
+DSP Report: Generating DSP zc0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator zc0 is absorbed into DSP zc0.
+DSP Report: operator zc0 is absorbed into DSP zc0.
+INFO: [Synth 8-5546] ROM "dbg_reg_MAR" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3332] Sequential element (dbus_we_reg) is unused and will be removed from module cu_combinational.
+WARNING: [Synth 8-3332] Sequential element (abus_we_reg) is unused and will be removed from module cu_combinational.
+WARNING: [Synth 8-3332] Sequential element (iobus_we_reg) is unused and will be removed from module cu_combinational.
+WARNING: [Synth 8-3332] Sequential element (mem_re_reg) is unused and will be removed from module cu_combinational.
+WARNING: [Synth 8-3332] Sequential element (iobus_mux_reg[4]) is unused and will be removed from module cu_combinational.
+WARNING: [Synth 8-3332] Sequential element (iobus_mux_reg[3]) is unused and will be removed from module cu_combinational.
+WARNING: [Synth 8-3332] Sequential element (iobus_mux_reg[2]) is unused and will be removed from module cu_combinational.
+WARNING: [Synth 8-3332] Sequential element (iobus_mux_reg[1]) is unused and will be removed from module cu_combinational.
+WARNING: [Synth 8-3332] Sequential element (iobus_mux_reg[0]) is unused and will be removed from module cu_combinational.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[21]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[20]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[19]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[18]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[17]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_PC_reg[16]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[21]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[20]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[19]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[18]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[17]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRA_reg[16]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[21]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[20]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[19]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[18]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[17]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MAR_reg[16]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[21]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[20]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[19]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[18]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[17]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_MBR_reg[16]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[21]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[20]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[19]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[18]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[17]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_IRB_reg[16]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_ALUZ_reg[31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_ALUZ_reg[30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_ALUZ_reg[29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_ALUZ_reg[28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_ALUZ_reg[27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_ALUZ_reg[26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_ALUZ_reg[25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_ALUZ_reg[24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_ALUZ_reg[23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_ALUZ_reg[22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (dbg_reg_ALUZ_reg[21]) is unused and will be removed from module cpu.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 855.789 ; gain = 519.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|sys_ram_8k: | mem_reg    | 256 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu_32_behavioral | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_32_behavioral | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_32_behavioral | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_32_behavioral | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_0/ram0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/ram0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-681] value '1000000000000.0ps' out of range, cropping to '214748368.0ps' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/constrs_1/new/nexys4_bsp.xdc:10]
+WARNING: [Synth 8-681] value '1000000000000.0ps' out of range, cropping to '214748368.0ps' [D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/constrs_1/new/nexys4_bsp.xdc:10]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 888.781 ; gain = 552.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 894.000 ; gain = 557.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|sys_ram_8k: | mem_reg    | 256 x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance ram0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ram0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 960.250 ; gain = 624.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 960.250 ; gain = 624.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 960.250 ; gain = 624.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 960.250 ; gain = 624.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 960.250 ; gain = 624.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 960.250 ; gain = 624.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 960.250 ; gain = 624.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |CARRY4    |   375|
+|3     |DSP48E1_1 |     3|
+|4     |LUT1      |   126|
+|5     |LUT2      |   803|
+|6     |LUT3      |  1043|
+|7     |LUT4      |   286|
+|8     |LUT5      |   641|
+|9     |LUT6      |  1279|
+|10    |MUXF7     |    45|
+|11    |RAMB18E1  |     1|
+|12    |FDRE      |  1038|
+|13    |LD        |    49|
+|14    |IBUF      |    18|
+|15    |OBUF      |    16|
+|16    |OBUFT     |    16|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------+------------------+------+
+|      |Instance         |Module            |Cells |
++------+-----------------+------------------+------+
+|1     |top              |                  |  5742|
+|2     |  cpu0           |cpu               |  5601|
+|3     |    al_unit      |alu_32_behavioral |  2211|
+|4     |    control_unit |cu_combinational  |  2269|
+|5     |  io0            |bsp_io            |    21|
+|6     |  ram0           |sys_ram_8k        |     1|
++------+-----------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 960.250 ; gain = 624.090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 187 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 960.250 ; gain = 256.793
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 960.250 ; gain = 624.090
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 491 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 49 instances were transformed.
+  LD => LDCE: 49 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+104 Infos, 269 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 960.250 ; gain = 636.395
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.runs/synth_1/system_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_top_utilization_synth.rpt -pb system_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 960.250 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  6 11:22:46 2018...

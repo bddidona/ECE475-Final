@@ -1,0 +1,455 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec  1 10:43:34 2018
+# Process ID: 7068
+# Current directory: D:/Workspace/ECE_475_FINAL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6592 D:\Workspace\ECE_475_FINAL\ECE_475_FINAL.xpr
+# Log file: D:/Workspace/ECE_475_FINAL/vivado.log
+# Journal file: D:/Workspace/ECE_475_FINAL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source tb_cu.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close [ open D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu_mux_select.vh w ]
+add_files D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cpu_mux_select.vh
+update_compile_order -fileset sources_1
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_ram [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_ram.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sim_1/new/tb_cpu_minimal.v w ]
+add_files -fileset sim_1 D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sim_1/new/tb_cpu_minimal.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_cpu_minimal [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cpu [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+launch_simulation
+launch_simulation
+source tb_cpu_minimal.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source tb_cpu_minimal.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_cpu_minimal.tcl
+close_sim
+launch_simulation
+source tb_cpu_minimal.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source tb_cpu_minimal.tcl
+close_sim
+launch_simulation
+source tb_cpu_minimal.tcl
+close_sim
+launch_simulation
+source tb_cpu_minimal.tcl
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 92
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 93
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 93
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 93
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 94
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 96
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 97
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 98
+relaunch_sim
+step
+step
+step
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 102
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 103
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 103
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 103
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 104
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 105
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 106
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 92
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 93
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 94
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+run all
+relaunch_sim
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 96
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 97
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 98
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 102
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 102
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 103
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 103
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 102
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 103
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 104
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 105
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 106
+run all
+relaunch_sim
+relaunch_sim
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+launch_simulation
+refresh_design
+launch_simulation
+source tb_cpu_minimal.tcl
+relaunch_sim
+relaunch_sim
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sim_1/new/tb_system_cpu.v w ]
+add_files -fileset sim_1 D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sim_1/new/tb_system_cpu.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_system_cpu [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top system_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+refresh_design
+launch_simulation
+launch_simulation
+source tb_system_cpu.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+refresh_design
+refresh_design
+close_sim
+launch_simulation
+source tb_system_cpu.tcl
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+close_sim
+launch_simulation
+source tb_system_cpu.tcl
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim
+update_compile_order -fileset sources_1
+refresh_design
+close_sim
+launch_simulation
+source tb_system_cpu.tcl
+relaunch_sim
+refresh_design
+close_sim
+launch_simulation
+source tb_system_cpu.tcl
+refresh_design
+refresh_design
+refresh_design
+close_sim
+launch_simulation
+source tb_system_cpu.tcl
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_cu [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+refresh_design
+launch_simulation
+source tb_cu.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 126
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 129
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 133
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 133
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 133
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 145
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 190
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 194
+remove_bps -file {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} -line 194
+add_bp {D:/Workspace/ECE_475_FINAL/ECE_475_FINAL.srcs/sources_1/new/cu_combinational.v} 196
+relaunch_sim
+step
+relaunch_sim
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+remove_bps -all
+relaunch_sim
+relaunch_sim
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_system_cpu [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+refresh_design
+launch_simulation
+source tb_system_cpu.tcl
+close_sim
